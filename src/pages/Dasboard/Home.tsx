@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { useAppSelector, useAppDispatch } from "../../hooks";
 import { increment } from "../../features/counter/counterSlice";
+import { Joke } from "../../components";
+
 const Home = () => {
   const { value } = useAppSelector((store) => store.counter);
   const dispatch = useAppDispatch();
@@ -29,7 +31,15 @@ const Home = () => {
       </div>
 
       <div className="flex">
-        <button className="bg-green-500 text-red-800 rounded-md p-2" onClick={() => dispatch(increment())}>INCREASE ME WITH RTK {value}</button>
+        <button
+          className="bg-green-500 text-red-800 rounded-md p-2"
+          onClick={() => dispatch(increment())}>
+          INCREASE ME WITH RTK {value}
+        </button>
+      </div>
+
+      <div className="mt-4">
+        <Joke />
       </div>
     </div>
   );
