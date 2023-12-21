@@ -33,5 +33,4 @@ React strictmode is disabled by default, enjoy your react app 🚀
 
 
 ## Authors
-
 - [Ivan Liberato](https://github.com/Void061)
