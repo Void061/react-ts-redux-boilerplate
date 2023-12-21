@@ -1,21 +1,30 @@
-
 # Base project react-ts + vite
+
 Boilerplate to start fast react application.
+
 ## This project include
+
 - React Typescript
 - Vite (fast dev-mode refresh)
 - Redux toolkit
 - Tailwind
 - React router dom
+- Aos animation support library
+
 ## Installation
+
 ```
 npm i
 ```
+
 ## Running (devmode)
+
 ```
 npm run dev
 ```
+
 ## Generation
+
 ```
 npm run build
 ```
@@ -28,9 +37,8 @@ The types are under types/ and
 React strictmode is disabled by default, enjoy your react app 🚀
 
 ## Working on
-- Aos (animation library) support.
-- Authentication (base, adapt it to your context).
 
+- Authentication (base, adapt it to your context).
 
 ## Authors
 
