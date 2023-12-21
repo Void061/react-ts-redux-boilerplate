@@ -32,6 +32,7 @@ const Home = () => {
 
       <div className="flex">
         <button
+          data-aos="fade-right"
           className="bg-green-500 text-red-800 rounded-md p-2"
           onClick={() => dispatch(increment())}>
           INCREASE ME WITH RTK {value}
