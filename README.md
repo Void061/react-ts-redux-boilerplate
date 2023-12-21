@@ -1,22 +1,30 @@
-
 # Base project react-ts + vite
+
 Boilerplate to start fast react application.
+
 ## This project include
+
 - React Typescript
 - Vite (fast dev-mode refresh)
 - Redux toolkit
 - Tailwind
 - React router dom
 - Aos animation support library
+
 ## Installation
+
 ```
 npm i
 ```
+
 ## Running (devmode)
+
 ```
 npm run dev
 ```
+
 ## Generation
+
 ```
 npm run build
 ```
@@ -26,11 +34,12 @@ npm run build
 App.tsx contains the main routing system, every pages are on pages/ folder exported by linked index.tsx (same for components, layouts on layouts/).
 This project include sample for redux reducers, redux thunks, axios provider and interceptors (for context as auth).
 The types are under types/ and
-React strictmode is disabled by default, enjoy your react app 🚀.
+React strictmode is disabled by default, enjoy your react app 🚀
 
 ## Working on
+
 - Authentication (base, adapt it to your context).
 
-
 ## Authors
+
 - [Ivan Liberato](https://github.com/Void061)
