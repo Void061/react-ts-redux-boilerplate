@@ -25,7 +25,7 @@ npm run build
 App.tsx contains the main routing system, every pages are on pages/ folder exported by linked index.tsx (same for components, layouts on layouts/).
 This project include sample for redux reducers, redux thunks, axios provider and interceptors (for context as auth).
 The types are under types/ and
-React strictmode is disabled by default, enjoy your react app 🚀.
+React strictmode is disabled by default, enjoy your react app 🚀
 
 ## Working on
 - Aos (animation library) support.
