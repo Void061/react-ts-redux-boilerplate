@@ -7,6 +7,7 @@ Boilerplate to start fast react application.
 - Redux toolkit
 - Tailwind
 - React router dom
+- Aos animation support library
 ## Installation
 ```
 npm i
@@ -28,7 +29,6 @@ The types are under types/ and
 React strictmode is disabled by default, enjoy your react app 🚀
 
 ## Working on
-- Aos (animation library) support.
 - Authentication (base, adapt it to your context).
 
 
