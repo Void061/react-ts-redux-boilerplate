@@ -1,12 +1,17 @@
-import axios from "axios";
+import axios, { AxiosError, InternalAxiosRequestConfig } from "axios";
+import { getUserFromLocalStorage } from "./localStorage";
 
 const customFetch = axios.create({
   baseURL: "https://icanhazdadjoke.com",
 });
 
+const loginFetch = axios.create({
+  baseURL: "https://dummyjson.com",
+});
+
 // Response interceptor for user if is AUTH
-/*customFetch.interceptors.request.use(
-  (config) => {
+customFetch.interceptors.request.use(
+  (config : InternalAxiosRequestConfig<any>) => {
     const user = getUserFromLocalStorage();
     if (user) {
       config.headers["Authorization"] = `Bearer ${user.token}`;
@@ -16,13 +21,13 @@ const customFetch = axios.create({
   (error) => {
     return Promise.reject(error);
   }
-);*/
+);
 
-export const checkForUnauthorizedResponse = (error: any, thunkAPI: any) => {
-  if (error.response.status === 401) {
+export const checkForUnauthorizedResponse = (error: AxiosError, thunkAPI: any) => {
+  if (error?.response?.status === 401) {
     // thunkAPI.dispatch(clearStore());
     return thunkAPI.rejectWithValue("Unauthorized! Logging Out...");
   }
 };
 
-export default customFetch;
+export { customFetch , loginFetch};
