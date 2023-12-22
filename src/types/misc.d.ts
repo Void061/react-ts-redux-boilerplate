@@ -1,4 +1,4 @@
 declare type loginData = {
-  username: String;
-  password: String;
+  username: string;
+  password: string;
 };

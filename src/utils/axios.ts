@@ -10,7 +10,7 @@ const loginFetch = axios.create({
 });
 
 // Response interceptor for user if is AUTH
-customFetch.interceptors.request.use(
+loginFetch.interceptors.request.use(
   (config : InternalAxiosRequestConfig<any>) => {
     const user = getUserFromLocalStorage();
     if (user) {

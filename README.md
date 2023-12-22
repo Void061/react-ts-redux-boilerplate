@@ -10,6 +10,7 @@ Boilerplate to start fast react application.
 - Tailwind
 - React router dom
 - Aos animation support library
+- Authentication (base, adapt it to your context)
 
 ## Installation
 
@@ -38,7 +39,8 @@ React strictmode is disabled by default, enjoy your react app 🚀
 
 ## Working on
 
-- Authentication (base, adapt it to your context).
+- Loading bar on route switch.
+- PWA support.
 
 ## Authors
 
