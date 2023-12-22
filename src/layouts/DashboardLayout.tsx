@@ -2,16 +2,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import { useAppSelector, useAppDispatch } from "../hooks";
 import { logoutUser } from "../features/user/userSlice";
 import { useEffect, useState } from "react";
-import TopBarProgress from "react-topbar-progress-indicator";
 import LoadingBar from "react-top-loading-bar";
-
-TopBarProgress.config({
-  barColors: {
-    "0": "#00ff39",
-    "1.0": "#00ff39",
-  },
-  shadowBlur: 5,
-});
 
 const DashboardLayout = () => {
   const { user } = useAppSelector((store) => store.user);
@@ -30,7 +21,7 @@ const DashboardLayout = () => {
   }, [location]);
 
   useEffect(() => {
-   setLoading(100);
+    setLoading(100);
   }, [prevLoc]);
 
   return (
