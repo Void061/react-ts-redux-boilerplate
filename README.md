@@ -11,6 +11,7 @@ Boilerplate to start fast react application.
 - React router dom
 - Aos animation support library
 - Authentication (base, adapt it to your context)
+- Progress topBar for routing-change (Layout based)
 
 ## Installation
 
@@ -39,7 +40,6 @@ React strictmode is disabled by default, enjoy your react app 🚀
 
 ## Working on
 
-- Loading bar on route switch.
 - PWA support.
 
 ## Authors
